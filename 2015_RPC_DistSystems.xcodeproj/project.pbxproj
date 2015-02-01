@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AC1D59831A7D998B00507BDF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AC1D59821A7D998B00507BDF /* main.c */; };
+		ACF095081A7DE88500EAD0C4 /* add_client.c in Sources */ = {isa = PBXBuildFile; fileRef = ACF095031A7DE88500EAD0C4 /* add_client.c */; };
+		ACF095091A7DE88500EAD0C4 /* add_clnt.c in Sources */ = {isa = PBXBuildFile; fileRef = ACF095041A7DE88500EAD0C4 /* add_clnt.c */; };
+		ACF0950A1A7DE88500EAD0C4 /* add_server.c in Sources */ = {isa = PBXBuildFile; fileRef = ACF095051A7DE88500EAD0C4 /* add_server.c */; };
+		ACF0950B1A7DE88500EAD0C4 /* add_svc.c in Sources */ = {isa = PBXBuildFile; fileRef = ACF095061A7DE88500EAD0C4 /* add_svc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,13 @@
 /* Begin PBXFileReference section */
 		AC1D597F1A7D998A00507BDF /* 2015_RPC_DistSystems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2015_RPC_DistSystems; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1D59821A7D998B00507BDF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		ACF095021A7DE65100EAD0C4 /* add.x */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = add.x; sourceTree = "<group>"; };
+		ACF095031A7DE88500EAD0C4 /* add_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = add_client.c; sourceTree = "<group>"; };
+		ACF095041A7DE88500EAD0C4 /* add_clnt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = add_clnt.c; sourceTree = "<group>"; };
+		ACF095051A7DE88500EAD0C4 /* add_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = add_server.c; sourceTree = "<group>"; };
+		ACF095061A7DE88500EAD0C4 /* add_svc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = add_svc.c; sourceTree = "<group>"; };
+		ACF095071A7DE88500EAD0C4 /* add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = add.h; sourceTree = "<group>"; };
+		ACF0950C1A7DE99100EAD0C4 /* makefile.add */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.add; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +68,14 @@
 		AC1D59811A7D998A00507BDF /* 2015_RPC_DistSystems */ = {
 			isa = PBXGroup;
 			children = (
+				ACF0950C1A7DE99100EAD0C4 /* makefile.add */,
+				ACF095031A7DE88500EAD0C4 /* add_client.c */,
+				ACF095041A7DE88500EAD0C4 /* add_clnt.c */,
+				ACF095051A7DE88500EAD0C4 /* add_server.c */,
+				ACF095061A7DE88500EAD0C4 /* add_svc.c */,
+				ACF095071A7DE88500EAD0C4 /* add.h */,
 				AC1D59821A7D998B00507BDF /* main.c */,
+				ACF095021A7DE65100EAD0C4 /* add.x */,
 			);
 			path = 2015_RPC_DistSystems;
 			sourceTree = "<group>";
@@ -118,6 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF0950A1A7DE88500EAD0C4 /* add_server.c in Sources */,
+				ACF095091A7DE88500EAD0C4 /* add_clnt.c in Sources */,
+				ACF095081A7DE88500EAD0C4 /* add_client.c in Sources */,
+				ACF0950B1A7DE88500EAD0C4 /* add_svc.c in Sources */,
 				AC1D59831A7D998B00507BDF /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +164,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -232,6 +254,7 @@
 				AC1D59881A7D998B00507BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
